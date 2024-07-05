@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		10877D792C37EBB800790442 /* canvas_pocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877D782C37EBB800790442 /* canvas_pocApp.swift */; };
 		10877D7B2C37EBB800790442 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877D7A2C37EBB800790442 /* ContentView.swift */; };
-		10877D7D2C37EBB800790442 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877D7C2C37EBB800790442 /* Item.swift */; };
 		10877D7F2C37EBB900790442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10877D7E2C37EBB900790442 /* Assets.xcassets */; };
 		10877D832C37EBB900790442 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10877D822C37EBB900790442 /* Preview Assets.xcassets */; };
 		10877D8D2C37EBB900790442 /* canvas_pocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877D8C2C37EBB900790442 /* canvas_pocTests.swift */; };
@@ -38,7 +37,6 @@
 		10877D752C37EBB800790442 /* canvas-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "canvas-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10877D782C37EBB800790442 /* canvas_pocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canvas_pocApp.swift; sourceTree = "<group>"; };
 		10877D7A2C37EBB800790442 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		10877D7C2C37EBB800790442 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		10877D7E2C37EBB900790442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10877D802C37EBB900790442 /* canvas_poc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = canvas_poc.entitlements; sourceTree = "<group>"; };
 		10877D822C37EBB900790442 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 			children = (
 				10877D782C37EBB800790442 /* canvas_pocApp.swift */,
 				10877D7A2C37EBB800790442 /* ContentView.swift */,
-				10877D7C2C37EBB800790442 /* Item.swift */,
 				10877D7E2C37EBB900790442 /* Assets.xcassets */,
 				10877D802C37EBB900790442 /* canvas_poc.entitlements */,
 				10877D812C37EBB900790442 /* Preview Content */,
@@ -263,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				10877D7B2C37EBB800790442 /* ContentView.swift in Sources */,
-				10877D7D2C37EBB800790442 /* Item.swift in Sources */,
 				10877D792C37EBB800790442 /* canvas_pocApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,10 +428,11 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -444,7 +441,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.canvas.poc.canvas-poc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -468,10 +466,11 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -480,7 +479,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.canvas.poc.canvas-poc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
