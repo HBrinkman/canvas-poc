@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		10877D792C37EBB800790442 /* canvas_pocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877D782C37EBB800790442 /* canvas_pocApp.swift */; };
-		10877D7B2C37EBB800790442 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877D7A2C37EBB800790442 /* ContentView.swift */; };
+		10877D7B2C37EBB800790442 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877D7A2C37EBB800790442 /* DrawingView.swift */; };
 		10877D7F2C37EBB900790442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10877D7E2C37EBB900790442 /* Assets.xcassets */; };
 		10877D832C37EBB900790442 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10877D822C37EBB900790442 /* Preview Assets.xcassets */; };
 		10877D8D2C37EBB900790442 /* canvas_pocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877D8C2C37EBB900790442 /* canvas_pocTests.swift */; };
 		10877D972C37EBB900790442 /* canvas_pocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877D962C37EBB900790442 /* canvas_pocUITests.swift */; };
 		10877D992C37EBB900790442 /* canvas_pocUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877D982C37EBB900790442 /* canvas_pocUITestsLaunchTests.swift */; };
+		10877DA62C3AFF9300790442 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DA52C3AFF9300790442 /* Line.swift */; };
+		10877DA82C3AFFAA00790442 /* DrawingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DA72C3AFFAA00790442 /* DrawingEngine.swift */; };
+		10877DAA2C3AFFE800790442 /* DrawingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DA92C3AFFE800790442 /* DrawingShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		10877D752C37EBB800790442 /* canvas-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "canvas-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10877D782C37EBB800790442 /* canvas_pocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canvas_pocApp.swift; sourceTree = "<group>"; };
-		10877D7A2C37EBB800790442 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10877D7A2C37EBB800790442 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		10877D7E2C37EBB900790442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10877D802C37EBB900790442 /* canvas_poc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = canvas_poc.entitlements; sourceTree = "<group>"; };
 		10877D822C37EBB900790442 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +48,9 @@
 		10877D922C37EBB900790442 /* canvas-pocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "canvas-pocUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10877D962C37EBB900790442 /* canvas_pocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canvas_pocUITests.swift; sourceTree = "<group>"; };
 		10877D982C37EBB900790442 /* canvas_pocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canvas_pocUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		10877DA52C3AFF9300790442 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		10877DA72C3AFFAA00790442 /* DrawingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingEngine.swift; sourceTree = "<group>"; };
+		10877DA92C3AFFE800790442 /* DrawingShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				10877D782C37EBB800790442 /* canvas_pocApp.swift */,
-				10877D7A2C37EBB800790442 /* ContentView.swift */,
+				10877D7A2C37EBB800790442 /* DrawingView.swift */,
 				10877D7E2C37EBB900790442 /* Assets.xcassets */,
 				10877D802C37EBB900790442 /* canvas_poc.entitlements */,
 				10877D812C37EBB900790442 /* Preview Content */,
+				10877DA52C3AFF9300790442 /* Line.swift */,
+				10877DA72C3AFFAA00790442 /* DrawingEngine.swift */,
+				10877DA92C3AFFE800790442 /* DrawingShape.swift */,
 			);
 			path = "canvas-poc";
 			sourceTree = "<group>";
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10877D7B2C37EBB800790442 /* ContentView.swift in Sources */,
+				10877DA82C3AFFAA00790442 /* DrawingEngine.swift in Sources */,
+				10877DA62C3AFF9300790442 /* Line.swift in Sources */,
+				10877DAA2C3AFFE800790442 /* DrawingShape.swift in Sources */,
+				10877D7B2C37EBB800790442 /* DrawingView.swift in Sources */,
 				10877D792C37EBB800790442 /* canvas_pocApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
