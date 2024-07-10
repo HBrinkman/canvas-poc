@@ -28,27 +28,21 @@ struct Home: View {
         
         ZStack {
             DrawingView(canvas: $canvas)
+                .ignoresSafeArea()
             DrawingView(canvas: $canvas2)
                 .frame(width: 300, height: 300)
                 .clipShape(
-                    RoundedRectangle(cornerRadius: 6)
+                    Circle()
                 )
                 .overlay(
-                    RoundedRectangle(cornerRadius: 6)
+                    Circle()
                         .stroke(.red, lineWidth: 2)
                 )
             
             DrawingView(canvas: $canvas3)
-                .frame(width: 300, height: 300)
+                .frame(width: 150, height: 150)
                 .border(.green)
                 .offset(x: 150, y: 150)
-                .clipShape(
-                    RoundedRectangle(cornerRadius: 6)
-                )
-                .overlay(
-                    RoundedRectangle(cornerRadius: 6)
-                        .stroke(.red, lineWidth: 2)
-                )
         }
     }
 }
