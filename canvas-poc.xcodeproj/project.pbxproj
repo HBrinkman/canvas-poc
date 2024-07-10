@@ -17,6 +17,11 @@
 		10877DA62C3AFF9300790442 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DA52C3AFF9300790442 /* Line.swift */; };
 		10877DA82C3AFFAA00790442 /* DrawingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DA72C3AFFAA00790442 /* DrawingEngine.swift */; };
 		10877DAA2C3AFFE800790442 /* DrawingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DA92C3AFFE800790442 /* DrawingShape.swift */; };
+		10877DAC2C3CF7E600790442 /* SvgPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DAB2C3CF7E600790442 /* SvgPath.swift */; };
+		10877DAF2C3CF80E00790442 /* DrawingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DAE2C3CF80E00790442 /* DrawingViewModel.swift */; };
+		10877DB12C3CF84E00790442 /* SvgDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DB02C3CF84E00790442 /* SvgDrawingView.swift */; };
+		10877DB32C3CF8F000790442 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DB22C3CF8F000790442 /* ContentView.swift */; };
+		10877DB52C3CF95C00790442 /* DrawingPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DB42C3CF95C00790442 /* DrawingPath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		10877DA52C3AFF9300790442 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		10877DA72C3AFFAA00790442 /* DrawingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingEngine.swift; sourceTree = "<group>"; };
 		10877DA92C3AFFE800790442 /* DrawingShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingShape.swift; sourceTree = "<group>"; };
+		10877DAB2C3CF7E600790442 /* SvgPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvgPath.swift; sourceTree = "<group>"; };
+		10877DAE2C3CF80E00790442 /* DrawingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewModel.swift; sourceTree = "<group>"; };
+		10877DB02C3CF84E00790442 /* SvgDrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvgDrawingView.swift; sourceTree = "<group>"; };
+		10877DB22C3CF8F000790442 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10877DB42C3CF95C00790442 /* DrawingPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingPath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,7 @@
 		10877D772C37EBB800790442 /* canvas-poc */ = {
 			isa = PBXGroup;
 			children = (
+				10877DAD2C3CF7FA00790442 /* svg-poc */,
 				10877D782C37EBB800790442 /* canvas_pocApp.swift */,
 				10877D7A2C37EBB800790442 /* DrawingView.swift */,
 				10877D7E2C37EBB900790442 /* Assets.xcassets */,
@@ -136,6 +147,18 @@
 				10877D982C37EBB900790442 /* canvas_pocUITestsLaunchTests.swift */,
 			);
 			path = "canvas-pocUITests";
+			sourceTree = "<group>";
+		};
+		10877DAD2C3CF7FA00790442 /* svg-poc */ = {
+			isa = PBXGroup;
+			children = (
+				10877DAB2C3CF7E600790442 /* SvgPath.swift */,
+				10877DAE2C3CF80E00790442 /* DrawingViewModel.swift */,
+				10877DB02C3CF84E00790442 /* SvgDrawingView.swift */,
+				10877DB22C3CF8F000790442 /* ContentView.swift */,
+				10877DB42C3CF95C00790442 /* DrawingPath.swift */,
+			);
+			path = "svg-poc";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +292,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				10877DA82C3AFFAA00790442 /* DrawingEngine.swift in Sources */,
+				10877DAC2C3CF7E600790442 /* SvgPath.swift in Sources */,
 				10877DA62C3AFF9300790442 /* Line.swift in Sources */,
 				10877DAA2C3AFFE800790442 /* DrawingShape.swift in Sources */,
+				10877DAF2C3CF80E00790442 /* DrawingViewModel.swift in Sources */,
+				10877DB52C3CF95C00790442 /* DrawingPath.swift in Sources */,
+				10877DB32C3CF8F000790442 /* ContentView.swift in Sources */,
 				10877D7B2C37EBB800790442 /* DrawingView.swift in Sources */,
+				10877DB12C3CF84E00790442 /* SvgDrawingView.swift in Sources */,
 				10877D792C37EBB800790442 /* canvas_pocApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
