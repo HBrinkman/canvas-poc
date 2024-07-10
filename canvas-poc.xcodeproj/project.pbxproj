@@ -13,10 +13,7 @@
 		10877D8D2C37EBB900790442 /* canvas_pocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877D8C2C37EBB900790442 /* canvas_pocTests.swift */; };
 		10877D972C37EBB900790442 /* canvas_pocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877D962C37EBB900790442 /* canvas_pocUITests.swift */; };
 		10877D992C37EBB900790442 /* canvas_pocUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877D982C37EBB900790442 /* canvas_pocUITestsLaunchTests.swift */; };
-		10877DB72C3E465100790442 /* PencilkitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DB62C3E465100790442 /* PencilkitView.swift */; };
-		10877DB92C3E46A400790442 /* SvgPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DB82C3E46A400790442 /* SvgPath.swift */; };
-		10877DBB2C3E46F100790442 /* StrokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DBA2C3E46F100790442 /* StrokeView.swift */; };
-		10877DBD2C3E474700790442 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DBC2C3E474700790442 /* DrawingView.swift */; };
+		10877DBF2C3E4E2800790442 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10877DBE2C3E4E2800790442 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +44,7 @@
 		10877D922C37EBB900790442 /* canvas-pocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "canvas-pocUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10877D962C37EBB900790442 /* canvas_pocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canvas_pocUITests.swift; sourceTree = "<group>"; };
 		10877D982C37EBB900790442 /* canvas_pocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canvas_pocUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		10877DB62C3E465100790442 /* PencilkitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilkitView.swift; sourceTree = "<group>"; };
-		10877DB82C3E46A400790442 /* SvgPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvgPath.swift; sourceTree = "<group>"; };
-		10877DBA2C3E46F100790442 /* StrokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeView.swift; sourceTree = "<group>"; };
-		10877DBC2C3E474700790442 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		10877DBE2C3E4E2800790442 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +99,7 @@
 				10877D7E2C37EBB900790442 /* Assets.xcassets */,
 				10877D802C37EBB900790442 /* canvas_poc.entitlements */,
 				10877D812C37EBB900790442 /* Preview Content */,
-				10877DB62C3E465100790442 /* PencilkitView.swift */,
-				10877DB82C3E46A400790442 /* SvgPath.swift */,
-				10877DBA2C3E46F100790442 /* StrokeView.swift */,
-				10877DBC2C3E474700790442 /* DrawingView.swift */,
+				10877DBE2C3E4E2800790442 /* ContentView.swift */,
 			);
 			path = "canvas-poc";
 			sourceTree = "<group>";
@@ -268,10 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10877DB72C3E465100790442 /* PencilkitView.swift in Sources */,
-				10877DB92C3E46A400790442 /* SvgPath.swift in Sources */,
-				10877DBD2C3E474700790442 /* DrawingView.swift in Sources */,
-				10877DBB2C3E46F100790442 /* StrokeView.swift in Sources */,
+				10877DBF2C3E4E2800790442 /* ContentView.swift in Sources */,
 				10877D792C37EBB800790442 /* canvas_pocApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

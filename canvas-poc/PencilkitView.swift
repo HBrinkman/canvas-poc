@@ -27,7 +27,8 @@ struct PencilKitView: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: PKCanvasView, context: Context) {
-//        uiView.strokes = strokes
+        uiView.drawing.strokes = strokes
+        //        uiView.strokes = strokes
 //        uiView.drawingBounds = drawingBounds
     }
 
