@@ -12,7 +12,7 @@ import SwiftData
 struct canvas_pocApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DrawingView()
         }
     }
 }
