@@ -22,8 +22,9 @@ struct Home: View {
     
     @State var canvas = PKCanvasView()
     @State var isErasing = false
-    @State var selectedColor: Color = .black
+    @State var selectedColor: Color = .blue
     @State var selectedTool: PKInkingTool.InkType = .pencil
+    @State private var showPopover = false
     
     var body: some View {
         
@@ -50,12 +51,46 @@ struct Home: View {
                     }
                     Spacer()
                     Button {
-                        // TODO show overlay
-                        print("Select brush")
-                        isErasing = false
-                        selectedTool = .watercolor
+                        showPopover.toggle()
                     } label: {
                         Image(systemName: "pencil")
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .popover(isPresented: $showPopover) {
+                        VStack {
+                            Button {
+                                selectedTool = .watercolor
+                                isErasing = false
+                            } label: {
+                                Text("Water color")
+                            }
+                            Button {
+                                selectedTool = .monoline
+                                isErasing = false
+                            } label: {
+                                Text("Monoline")
+                            }
+                            Button {
+                                selectedTool = .pen
+                                isErasing = false
+                            } label: {
+                                Text("Pen")
+                            }
+                            Button {
+                                selectedTool = .marker
+                                isErasing = false
+                            } label: {
+                                Text("Marker")
+                            }
+                            Button {
+                                selectedTool = .crayon
+                                isErasing = false
+                            } label: {
+                                Text("Crayon")
+                            }
+                        }
+                        .padding()
+                        .presentationCompactAdaptation(.popover)
                     }
                     Spacer()
                     Button {
