@@ -60,32 +60,36 @@ struct CanvasDrawingView: View {
     var body: some View {
         VStack {
             Canvas { context, size in
-                for position in imagePositions {
-                    // Als ik patroon wil gaan tekenen heb ik het volgende nodig. Tijdens het tekenen van een image, een specifiek gedeelte van de image pakken waar de gebruiker op dat moment aan het tekenen is.
-                    let uiImage = UIImage(systemName: "star.fill")! // Example to get a UIImage
-                    let backgroundImageTest = Image("pawpatrol-background")
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fit)
-//                        .frame(width: 50, height: 50)
-//                        .clipShape(Circle())
-//                        .compositingGroup()
-//                    context.draw(Image("pattern2"), at: position)
-                    context.draw(backgroundImageTest, at: position)
-                }
-//                for line in lines {
-//                    var path = Path()
-//                    path.addLines(line.points)
-//                    
+//                for position in imagePositions {
+//                    // Als ik patroon wil gaan tekenen heb ik het volgende nodig. Tijdens het tekenen van een image, een specifiek gedeelte van de image pakken waar de gebruiker op dat moment aan het tekenen is.
+//                    let uiImage = UIImage(systemName: "star.fill")! // Example to get a UIImage
+//                    let backgroundImageTest = Image("pawpatrol-background")
+////                        .resizable()
+////                        .aspectRatio(contentMode: .fit)
+////                        .frame(width: 50, height: 50)
+////                        .clipShape(Circle())
+////                        .compositingGroup()
+////                    context.draw(Image("pattern2"), at: position)
+//                    context.draw(backgroundImageTest, at: position)
+//                }
+                for line in lines {
+                    var path = Path()
+                    path.addLines(line.points)
+                    
 //                    context.stroke(path, with: .color(line.color), style: StrokeStyle(
 //                        lineWidth: 5,
 //                        lineCap: .round,
 //                        lineJoin: .round
 //                    ))
-//                    
+                    
+//                    context.stroke(path, with: GraphicsContext.Shading.linearGradient(Gradient(colors: [.green, .blue]), startPoint: line.points.first!, endPoint: line.points.last!))
+                    
+                    context.stroke(path, with: GraphicsContext.Shading.tiledImage(Image("pattern")), style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
+//
 //                    // Weird spraycan effect
 //                    //                    drawSprayCanEffect(for: line, on: context)
 //                    
-//                }
+                }
             }
             .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
                 .onChanged({ value in
