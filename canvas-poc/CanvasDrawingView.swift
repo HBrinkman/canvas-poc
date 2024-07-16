@@ -84,7 +84,7 @@ struct CanvasDrawingView: View {
                     
 //                    context.stroke(path, with: GraphicsContext.Shading.linearGradient(Gradient(colors: [.green, .blue]), startPoint: line.points.first!, endPoint: line.points.last!))
                     
-                    context.stroke(path, with: GraphicsContext.Shading.tiledImage(Image("pattern")), style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
+                    context.stroke(path, with: GraphicsContext.Shading.tiledImage(Image("pawpatrol-background")), style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
 //
 //                    // Weird spraycan effect
 //                    //                    drawSprayCanEffect(for: line, on: context)
